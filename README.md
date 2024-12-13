@@ -16,8 +16,8 @@ The simulation framework demonstrates the evaluation of various statistical test
 2. **Parameters**:
    - Number of genes (100).
    - Number of active SNPs per gene (20).
-   - Signal strength for **strong cis-effects** ($A_s = 4.25$) and **weak trans-effects** (\(A_w = 0.2\)).
-   - Variance of signals (\(\sigma_s = \sigma_w = 1.05\)).
+   - Signal strength for **strong cis-effects** ($A_s = 4.25$) and **weak trans-effects** ($A_w = 0.2$).
+   - Variance of signals ($\sigma_s = \sigma_w = 1.05$).
    - Correlation structure of SNPs derived from the input genotype data.
 
 3. **Statistical Tests**:
@@ -34,7 +34,7 @@ The simulation framework demonstrates the evaluation of various statistical test
    - Noise is added to the SNP effects for non-active SNPs.
 
 2. **Calculate Test Statistics**:
-   - Compute \(z\)-scores for each SNP across genes, accounting for the correlation structure among SNPs.
+   - Compute $z$-scores for each SNP across genes, accounting for the correlation structure among SNPs.
    - Calculate the p-values and statistical measures for each gene using the `SetTest` package from Zhang et al. (2020).
 
 3. **Rank Genes by Statistical Test**:
