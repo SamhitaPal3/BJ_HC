@@ -51,7 +51,7 @@ The simulation framework demonstrates the evaluation of various statistical test
      - **BJ** (Berk-Jones) and **HC** (Higher Criticism) methods tend to outperform the Mean-based and Minimum-p-value methods when signals are sparse.
    - Example visualization:
 
-   ![PR Curves](#) *(Insert link to a plot image if available)*
+   ![PR Curves](PRcurve.png) *(Insert link to a plot image if available)*
 
 2. **Summary Metrics**:
    - Mean precision and recall values across iterations for each statistical method.
