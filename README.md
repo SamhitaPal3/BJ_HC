@@ -14,8 +14,8 @@ The simulation framework demonstrates the evaluation of various statistical test
    - The simulation uses SNP genotype data (e.g., `SNP_data_HapMap_ch21_n90.RData`) with 90 subjects and 2000 SNPs selected for analysis.
 
 2. **Parameters**:
-   - Number of genes (\(100\)).
-   - Number of active SNPs per gene (\(20\)).
+   - Number of genes (100).
+   - Number of active SNPs per gene (20).
    - Signal strength for **strong cis-effects** (\(A_s = 4.25\)) and **weak trans-effects** (\(A_w = 0.2\)).
    - Variance of signals (\(\sigma_s = \sigma_w = 1.05\)).
    - Correlation structure of SNPs derived from the input genotype data.
