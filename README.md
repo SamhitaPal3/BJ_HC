@@ -2,7 +2,7 @@
 
 Samhita Pal and Xinge Jessie Jeng
 
-This contains the R codes for siumulation and real data analysis for our project 'Discovering Candidate Genes Regulated by GWAS Signals in Cis and Trans'. This study introduces a novel approach to discover candidate genes regulated by GWAS signals in both cis and trans. We utilize adaptive statistical metrics (like Berk Jones test statistic and the Higher Criticism test statistic) that can reflect both the strong, sparse effects of cis-eQTLs and the weak, dense effects of trans-eQTLs, thereby helping us uncover joint effects that include functional impact of GWAS loci residing in non-coding regions. 
+This contains the R codes for siumulation and real data analysis for our project 'Discovering Candidate Genes Regulated by GWAS Signals in Cis and Trans'. This study introduces a novel approach to discover candidate genes regulated by GWAS signals in both cis and trans. We utilize adaptive statistical metrics (like Berk Jones test statistic and the Higher Criticism test statistic) that can reflect both the strong, sparse effects of cis-eQTLs and the weak, dense effects of trans-eQTLs, thereby helping us uncover joint effects that include functional impact of GWAS loci residing in non-coding regions (Jeng et al., 2013). 
 
 ### **Example: Evaluating Statistical Methods for SNP-Gene Relationships**
 
@@ -22,8 +22,8 @@ The simulation framework demonstrates the evaluation of various statistical test
 
 3. **Statistical Tests**:
    - Four statistical measures are computed for each gene: 
-     - **Berk-Jones (BJ)**
-     - **Higher Criticism (HC)**
+     - **Berk-Jones (BJ)** (Berk and Jones, 1979)
+     - **Higher Criticism (HC)** (Donoho and Jin, 2004)
      - **Mean-based**
      - **Minimum p-value**
 
@@ -35,7 +35,7 @@ The simulation framework demonstrates the evaluation of various statistical test
 
 2. **Calculate Test Statistics**:
    - Compute \(z\)-scores for each SNP across genes, accounting for the correlation structure among SNPs.
-   - Calculate the p-values and statistical measures for each gene using the `SetTest` package.
+   - Calculate the p-values and statistical measures for each gene using the `SetTest` package from Zhang et al. (2020).
 
 3. **Rank Genes by Statistical Test**:
    - Each gene is ranked by the statistical measure (e.g., BJ, HC).
@@ -86,3 +86,16 @@ legend("bottomleft",
 This framework can be applied to analyze real SNP-gene data to evaluate the relative performance of different statistical measures for detecting weak signals in genomics.
 
 ---
+### Reference
+
+Berk, R. H. and D. H. Jones (1979). Goodness-of-fit test statistics that dominate the
+kolmogorov statistics. Zeitschrift f¨ur Wahrscheinlichkeitstheorie und verwandte Gebiete 47 (1), 47–59.
+
+Donoho, D. and J. Jin (2004). Higher criticism for detecting sparse heterogeneous mixtures.
+Annals of Statistics 32 (3), 962–994.
+
+Jeng, X. J., T. T. Cai, and H. Li (2013). Simultaneous discovery of rare and common segment
+variants. Biometrika 100 (1), 157–172. PMCID:PMC3696347.
+
+Zhang, H., J. Jin, and Z. Wu (2020). Distributions and power of optimal signal-detection
+statistics in finite case. IEEE Transactions on Signal Processing 68, 1021–1033.
