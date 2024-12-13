@@ -1,4 +1,4 @@
-# BJ_HC
+# eGene
 
 Samhita Pal and Xinge Jessie Jeng
 
