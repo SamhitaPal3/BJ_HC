@@ -7,11 +7,11 @@ This contains the R codes for siumulation and real data analysis for our project
 ### **Example: Evaluating Statistical Methods for SNP-Gene Relationships**
 
 #### **Goal**
-The simulation framework demonstrates the evaluation of various statistical tests (e.g., Higher Criticism (HC), Berk-Jones (BJ), Mean-based, and Minimum-P-value) in identifying SNPs associated with specific genes. It provides precision-recall analysis to assess the performance of these methods when distinguishing between active SNPs (signals) and non-active SNPs (noise).
+The simulation framework demonstrates the evaluation of various statistical tests (e.g., Higher Criticism (HC), Berk-Jones (BJ), Mean-based, and Minimum-P-value) in identifying genes associated with specific SNPs. 
 
 #### **Input Data**
 1. **SNP Data**:
-   - The simulation uses SNP genotype data (e.g., `SNP_data_HapMap_ch21_n90.RData`) with 90 subjects and 2000 SNPs selected for analysis.
+   - The simulation uses SNP genotype data (followng the structure of, for example, the `SNP_data_HapMap_ch21_n90.RData`) with 90 subjects and 2000 SNPs for analysis.
 
 2. **Parameters**:
    - Number of genes (100).
@@ -42,7 +42,7 @@ The simulation framework demonstrates the evaluation of various statistical test
    - Genes containing active SNPs are expected to rank higher.
 
 4. **Evaluate Performance**:
-   - Compare the methods using **precision-recall (PR) curves** to assess how well each method identifies active SNPs.
+   - Compare the methods using **precision-recall (PR) curves** to assess how well each method identifies candidate genes.
 
 #### **Output**
 1. **Precision-Recall Curves**:
@@ -83,19 +83,9 @@ legend("bottomleft",
 - **Berk-Jones (BJ)** and **Higher Criticism (HC)** outperform other methods in terms of precision and recall when signals are sparse and weak.
 
 #### **Real-World Relevance**
-This framework can be applied to analyze real SNP-gene data to evaluate the relative performance of different statistical measures for detecting weak signals in genomics.
+This framework can be applied to analyze real SNP-gene data to evaluate the relative performance of different statistical measures for detecting genes with both strong and weak signals in genomics.
 
 ---
 ### Reference
 
-Berk, R. H. and D. H. Jones (1979). Goodness-of-fit test statistics that dominate the
-kolmogorov statistics. Zeitschrift f¨ur Wahrscheinlichkeitstheorie und verwandte Gebiete 47 (1), 47–59.
 
-Donoho, D. and J. Jin (2004). Higher criticism for detecting sparse heterogeneous mixtures.
-Annals of Statistics 32 (3), 962–994.
-
-Jeng, X. J., T. T. Cai, and H. Li (2013). Simultaneous discovery of rare and common segment
-variants. Biometrika 100 (1), 157–172. PMCID:PMC3696347.
-
-Zhang, H., J. Jin, and Z. Wu (2020). Distributions and power of optimal signal-detection
-statistics in finite case. IEEE Transactions on Signal Processing 68, 1021–1033.
