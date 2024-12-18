@@ -4,10 +4,10 @@ Samhita Pal and Xinge Jessie Jeng
 
 This contains the R codes for siumulation and real data analysis for our project 'Discovering Candidate Genes Regulated by GWAS Signals in Cis and Trans'. This study introduces a novel approach to discover candidate genes regulated by GWAS signals in both cis and trans. We utilize adaptive statistical metrics (like Berk Jones test statistic and the Higher Criticism test statistic) that can reflect both the strong, sparse effects of cis-eQTLs and the weak, dense effects of trans-eQTLs, thereby helping us uncover joint effects that include functional impact of GWAS loci residing in non-coding regions. 
 
-### **Example: Evaluating Statistical Methods for SNP-Gene Relationships**
+### **Example: Evaluating Statistical Methods for eGene Identification**
 
 #### **Goal**
-The simulation framework demonstrates the evaluation of various statistical tests (e.g., Higher Criticism (HC), Berk-Jones (BJ), Mean-based, and Minimum-P-value) in identifying genes associated with specific SNPs. 
+The simulation framework demonstrates the evaluation of various statistical methods (e.g., Higher Criticism (HC), Berk-Jones (BJ), Mean-based, and Minimum-P-value) in prioritizing eGenes over irrelevant genes. 
 
 #### **Input Data**
 1. **SNP Data**:
