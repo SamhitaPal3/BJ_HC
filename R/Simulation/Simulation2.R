@@ -4,7 +4,7 @@ library(pfa)
 library(purrr)
 
 set.seed(98462)
-X       <- load("SNP_gene.RData")
+load("SNP_gene.RData")
 
 num_of_sub    <- nrow(X)
 num_of_snp    <- ncol(X)
