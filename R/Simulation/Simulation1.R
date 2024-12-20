@@ -2,10 +2,7 @@ library(doParallel)
 library(expm)
 
 # Loading the SNP data
-snp_dat       <- load("C:/Users/HP/Downloads/Genomics/Data/SNP_data_HapMap_ch21_n90.RData")
-
-# Selecting 2000 SNPs
-X             <- X[,(1:2000)]
+X       <- load("SNP_gene.RData")
 
 num_of_sub    <- nrow(X)
 num_of_snp    <- ncol(X)
