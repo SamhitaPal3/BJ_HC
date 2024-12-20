@@ -4,8 +4,8 @@ library(pfa)
 library(purrr)
 
 set.seed(98462)
-snp_dat       <- load("C:/Users/HP/Downloads/Genomics/Data/SNP_data_HapMap_ch21_n90.RData")
-X             <- X[,(1:2000)]
+X       <- load("SNP_gene.RData")
+
 num_of_sub    <- nrow(X)
 num_of_snp    <- ncol(X)
 cor_mat       <- cor(X)
