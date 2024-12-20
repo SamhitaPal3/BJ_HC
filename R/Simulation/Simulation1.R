@@ -2,7 +2,7 @@ library(doParallel)
 library(expm)
 
 # Loading the SNP data
-X       <- load("SNP_gene.RData")
+load("SNP_gene.RData")
 
 num_of_sub    <- nrow(X)
 num_of_snp    <- ncol(X)
